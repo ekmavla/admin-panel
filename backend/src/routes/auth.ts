@@ -21,7 +21,7 @@ export default async function authRoutes(fastify) {
 
       const token = jwt.sign(
         { id: admin.id, username: admin.username, role: admin.role || "admin" },
-        process.env.JWT_SECRET || "secret",
+        process.env.JWT_SECRET,
         { expiresIn: "4h" }
       );
 
