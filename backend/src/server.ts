@@ -22,7 +22,7 @@ await fastify.register(fastifyMultipart, {
 });
 
 await fastify.register(fastifyJWT, {
-  secret: process.env.JWT_SECRET || "your-secret-key",
+  secret: process.env.JWT_SECRET,
 });
 
 fastify.decorate(
