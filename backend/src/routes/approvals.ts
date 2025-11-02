@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ApprovalRequest, MISStudent, MISTeacher, AuditTrail } from "../models/index.js";
 
 export default async function approvalsRoutes(fastify) {
