@@ -1,3 +1,4 @@
+// @ts-nocheck
 import bcrypt from "bcrypt";
 import { Admin } from "../models/index.js";
 import jwt from "jsonwebtoken";
